@@ -1,0 +1,59 @@
+# Betriebssystem-Dateien
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor-Verzeichnisse und -Dateien
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Abhängigkeiten
+node_modules/
+vendor/
+bower_components/
+
+# Build-Verzeichnisse
+dist/
+build/
+out/
+
+# Umgebungsvariablen
+.env
+.env.local
+.env.*.local
+
+# Debug-Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporäre Dateien
+*.log
+*.tmp
+.tmp/
+.temp/
+
+# Kompilierte Dateien
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Paket-Dateien
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Cache-Verzeichnisse
+.cache/
+.sass-cache/ 

@@ -1,0 +1,150 @@
+/* Base styles */
+:root {
+    --primary-color: #333;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --link-color: #007acc;
+    --white: #fff;
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px; /* Base font size for better readability */
+}
+
+/* Header styles */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    padding: 1rem 0;
+}
+
+nav ul li {
+    margin: 0.5rem 0;
+}
+
+/* Main content */
+main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+/* Link styles */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+/* Focus styles for accessibility */
+a:focus, button:focus {
+    outline: 3px solid var(--link-color);
+    outline-offset: 2px;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+}
+
+/* High contrast and accessibility improvements */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #000;
+        --text-color: #000;
+        --link-color: #0000EE;
+        --background-color: #fff;
+    }
+
+    * {
+        text-shadow: none !important;
+        box-shadow: none !important;
+    }
+} 
