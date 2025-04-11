@@ -11,10 +11,10 @@ export default function Home() {
       </Head>
 
       <main>
-        <header role="banner">
+        <header>
           <h1>Viktor Baal - KI-Portfolio</h1>
           <p>Zukunftsarbeitsbereiche, Methoden und Strategien als Data Analyst mit KI-Unterstützung</p>
-          <nav role="navigation" aria-label="Hauptnavigation">
+          <nav>
             <ul>
               <li>
                 <a href="https://www.linkedin.com/in/viktor-baal-bbb30383" 
@@ -28,14 +28,14 @@ export default function Home() {
           </nav>
         </header>
 
-        <section aria-labelledby="about-heading">
-          <h2 id="about-heading">Über mich</h2>
+        <section>
+          <h2>Über mich</h2>
           <p>Strategien für barrierefreies Arbeiten: Kombination mit mehreren großen Bildschirmen 
              (mindestens 32 Zoll) für eine produktive Arbeitsumgebung als sehbehinderter Data Analyst.</p>
         </section>
 
-        <section aria-labelledby="projects-heading">
-          <h2 id="projects-heading">Projekte</h2>
+        <section>
+          <h2>Projekte</h2>
           <p>In Kürze: Projekte aus den Bereichen KI-Text, KI-Bild, KI-Sound und KI-Video.</p>
         </section>
       </main>
