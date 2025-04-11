@@ -21,7 +21,7 @@ const nextConfig = {
 
     // Image Optimization
     images: {
-        domains: ['github.com', 'raw.githubusercontent.com'],
+        domains: ['github.com'],
         deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
         imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
         minimumCacheTTL: 60
@@ -61,7 +61,7 @@ const nextConfig = {
                     },
                     {
                         key: 'Referrer-Policy',
-                        value: 'origin-when-cross-origin'
+                        value: 'strict-origin-when-cross-origin'
                     }
                 ]
             }
